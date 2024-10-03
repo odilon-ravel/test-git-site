@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Web Exemple</title>
+    <!-- CSS ao anatiny balise style -->
+    <style>
+        /* Style général */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section accueil */
+        #accueil {
+            background: url('background.jpg') no-repeat center center/cover;
+            height: 100vh;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #accueil h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        #accueil p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Section services */
+        #services {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .service {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service h3 {
+            margin-bottom: 15px;
+        }
+
+        .service p {
+            color: #555;
+        }
+
+        /* Section about */
+        #about {
+            padding: 50px;
+            background-color: #e9e9e9;
+            text-align: center;
+        }
+
+        /* Section contact */
+        #contact {
+            padding: 50px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact label {
+            margin-top: 10px;
+        }
+
+        #contact input, #contact textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        #contact button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            color: #333;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #contact button:hover {
+            background-color: #ddd;
+        }
+
+        /* Pied de page */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="logo">MonSiteWeb</div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section principale -->
+    <section id="accueil">
+        <h1>Bienvenue sur MonSiteWeb</h1>
+        <p>Ceci est une page web exemple créée en utilisant HTML et CSS.</p>
+        <a href="#services" class="btn">Découvrir nos services</a>
+    </section>
+
+    <!-- Section services -->
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>Service 1</h3>
+                <p>Description du service 1.</p>
+            </div>
+            <div class="service">
+                <h3>Service 2</h3>
+                <p>Description du service 2.</p>
+            </div>
+            <div class="service">
+                <h3>Service 3</h3>
+                <p>Description du service 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p>Nous sommes une équipe dédiée à offrir les meilleurs services pour nos clients.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="#" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 MonSiteWeb. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
